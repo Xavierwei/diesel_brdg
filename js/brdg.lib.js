@@ -117,7 +117,8 @@ $.Comment = function(nid){
         var comment = {
                nid: form.find('input[name="nid"]').val(),
                comment_body: {und: [{value: form.find('textarea[name="comment"]').val(), summary: form.find('textarea[name="comment"]').val()}]},
-               field_email: {und: [{value: form.find('input[name="email"]').val()+"@ff9263.com"}]}
+               //name: {und: [{value: form.find('input[name="email"]').val()}]}
+               name: form.find('input[name="email"]').val()
         };
         $.ajax({
                 url: apipath + "/comment",

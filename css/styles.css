@@ -306,16 +306,18 @@ transform:scale(0.7);
 #dc2 .btn_close {position:absolute;left:680px;width:100px;height:100px; cursor:pointer;background:#000 url(../images/close.png) no-repeat;}
 #dc2 .btn_close:hover {background-color:#fff;}
 #dc2 .btn_share,#dc2 .btn_comments,#dc2 .btn_like {height:100px;line-height:100px;cursor:pointer;color:#fff;float:left;text-align:center;}
-#dc2 .btn_like {width:150px;}
+#dc2 .btn_like {width:79px;}
 #dc2 .btn_like:hover like_icon {opacity:0.5;}
 #dc2 .btn_share:hover,#dc2 .btn_comments:hover,#dc2 .btn_share.actived,#dc2 .btn_comments.actived {color:#fff;}
 #dc2 .btn_like span {float:left;}
-#dc2 .btn_like .like_counts {font-size:14px;margin:0 0 0 27px;width:20px;}
+#dc2 .btn_like .like_counts {font-size:14px;margin:0 0 0 17px;width:20px;}
 #dc2 .btn_like .like_icon {margin:3px 0 0 4px;}
 #dc2 .btn_comments {width:148px;}
-#dc2 .btn_share {width:240px;}
+#dc2 .btn_share {width:152px;}
 #dc2 .btn_share span {border:1px solid #ccc;background:#000;color:#fff;padding:10px 20px;}
 #dc2 .btn_share span:hover {background:#fff;color:#000;}
+#dc2 .btn_comments span {border:1px solid #ccc;background:#000;color:#fff;padding:10px 20px;}
+#dc2 .btn_comments span:hover {background:#fff;color:#000;}
 #dc2 .userinfo {margin:74px 0 0 30px;}
 #dc2 .userinfo .avator {float:left;border:1px solid #ccc;width:40px;height:40px;}
 #dc2 .userinfo .username {float:left;margin:14px 0 0 10px;}
@@ -372,10 +374,10 @@ transform:scale(0.7);
 .comment_form .loading {display:none;}
 .form_item {margin:7px 0; position:relative;}
 .form_item label.error { position:absolute; top:0px;left:80px;color:#888; text-transform:none;}
-.form_item label {display:block;color:#eee; margin:0 0 3px 0;text-transform:uppercase;}
+.form_item label {display:block;color:#fff; margin:0 0 3px 0;text-transform:uppercase;}
 .form_item .text_input {background:#222;width:335px;border:1px solid #ccc;padding:6px 4px;color:#fff; font-family:Arial, Helvetica, sans-serif;font-size:11px;}
 .form_item .text_input:focus {background:#333;border:1px solid #444;}
-.form_item .button_input {background:#222;border:1px solid #ccc;color:#eee;padding:4px 10px; text-transform:uppercase;}
+.form_item .button_input {font-family:'Oswald', Arial, Helvetica, sans-serif;background:#222;border:1px solid #ccc;color:#fff;padding:4px 10px; text-transform:uppercase;}
 .form_item .button_input:hover {background:#111;border:1px solid #222;color:#fff;}
 .form_item .button_input:disabled {opacity:0.5;}
 .form_item_submit span {color:#888;margin:0 0 0 10px;}

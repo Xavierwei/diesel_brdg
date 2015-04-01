@@ -385,9 +385,9 @@ body {
 .d1_msg .btn_like_m {width:40px;margin:0 auto;}
 .d1_msg .btn_like .like_counts {font-size:14px;margin:17px 0 0 0;width:20px;}
 .d1_msg .btn_like .like_icon {margin:19px 0 0 0;width:14px;height:14px;background:url(../images/icon_like_m.gif) no-repeat;background-size:14px 14px;}
-.d1_msg .btn_comments {width:33%;float:left;border-right:1px solid #333;border-left:1px solid #333;border-bottom:1px solid #333;height:50px;text-align:center;line-height:50px;font-size:8px;}
+.d1_msg .btn_comments {width:32%;float:left;border-right:1px solid #333;border-left:1px solid #333;border-bottom:1px solid #333;height:50px;text-align:center;line-height:50px;font-size:8px;}
 .d1_msg .btn_comments:active {background:#fff;color:#000;}
-.d1_msg .btn_share {width:66%;float:left;height:50px;text-align:center;line-height:50px;border-bottom:1px solid #333;border-left:1px solid #333;font-size:8px;}
+.d1_msg .btn_share {width:32%;float:left;height:50px;text-align:center;line-height:50px;border-bottom:1px solid #333;border-left:1px solid #333;font-size:8px;}
 .d1_msg .btn_share:active {background:#fff;color:#000;}
 .d1_msg {width:70%; position:absolute;bottom:0;right:0;background:#000;border-left:1px solid #333;}
 .d1_col1_wrap {width:33%;float:left;overflow:hidden;border-bottom:1px solid #333;}

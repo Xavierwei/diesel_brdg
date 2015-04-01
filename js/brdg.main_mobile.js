@@ -25,7 +25,7 @@ var $_utility = $.BrdgUtility();
 var submiting = true;
 var current_type = 0;
 var isiPad = navigator.userAgent.match(/iPad/i) != null;
-var STR_CITYLABEL = new Array('china','others','china - others');
+var STR_CITYLABEL = new Array('china','others','china - other countries');
 var citylabel = 2;
 var current_cityid = null;
 if(isiPad)
@@ -1300,11 +1300,11 @@ function loadcomment(_item) {
                 var media_date_year = date_media_date.getFullYear();
                 var media_date_month = date_media_date.getMonth();
                 var media_date_day = date_media_date.getDate();
-                var name = data[c].field_email.split('@');
+                var name = data[c].name;
                 var classname = '';
                 if(c == 0) classname = "first";
                 if(c == (data.length-1)) classname = "last";
-                comments_wrap.append('<div class="comment_item_wrap '+classname+'"><div class="comment_item"><div class="comment_title"><span class="name">' + name[0] + '</span><span class="date">' + media_date_day + " " + monthShortName[media_date_month] + ", " + media_date_year + '</span></div><div class="comment_body">' + data[c].field_comment + '</div></div></div>');
+                comments_wrap.append('<div class="comment_item_wrap '+classname+'"><div class="comment_item"><div class="comment_title"><span class="name">' + name + '</span><span class="date">' + media_date_day + " " + monthShortName[media_date_month] + ", " + media_date_year + '</span></div><div class="comment_body">' + data[c].field_comment + '</div></div></div>');
             }
             var widnowWidth = $(window).width();
             $('.comment_item').width(widnowWidth);

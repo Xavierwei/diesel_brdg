@@ -432,7 +432,7 @@ function brdg_services_validate_comment($form, &$form_state) {
  * Implements hook_comment_insert()
  */
 function brdg_services_comment_insert($comment) {
-//	$email = $comment->field_email[LANGUAGE_NONE][0]['value'];
+//	$comment->field_email[LANGUAGE_NONE][0]['value'];
 //	if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
 //		// send email to poster to prevent spam
 //		$ret = pet_send_mail(EMAIL_COMMENT_APPROVE, array(

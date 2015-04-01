@@ -61,6 +61,7 @@ function brdgInit() {
     $('.vgrid').isotope({
         'resizable': false
     });
+    $('.vgrid').css({height:'auto'});
     $.address.externalChange(function (e) {
         if (!_.isEmpty(e.pathNames[0])) {
             loadSingleContent(e.pathNames[0], 1);
@@ -313,7 +314,7 @@ function renderItem(data, type) {
 
     var pageHeight = (Math.ceil($('.vgrid > *').length / (($width - 100) / imageWidth))) * imageWidth;
     $('.page').height(pageHeight);
-    
+    $('.vgrid').css({'height': 'auto'});
     setTimeout(loadingCover, t);
     loadingCover();
 
@@ -557,7 +558,7 @@ function openBigImage(media_data) {
         $('#dc3').css('left', dc3_left);  
         $('#dc2').css('left', dc2_left);
         $('.left_panel').animate({'left': $width},800,'easeInOutQuart');
-        $('.vgrid').animate({'margin-left': $width + 100},800,'easeInOutQuart');
+        $('.vgrid').animate({'margin-left': $width + 101},800,'easeInOutQuart');
         $('#dc2').addClass('opened');
     }, 100);
 //    setTimeout(function () {
@@ -856,12 +857,13 @@ function moveDc2(face) {
     $('.dc2_bigcube').eq(0).remove();
     $('#dc2 .btn_close').css({
         'background-position': '0 0'
-    }).spriteOnHover({
-        fps: 20,
-        orientation: 'vertical',
-        width: 100,
-        height: 100
     });
+    // .spriteOnHover({
+    //     fps: 20,
+    //     orientation: 'vertical',
+    //     width: 100,
+    //     height: 100
+    // });
     bindNodeEvent();
     var date = $('.dc1_face1 .day').html();
     //$_utility.updateDay(date);
@@ -1079,17 +1081,17 @@ function bindNodeEvent() {
                 'margin-top': -top
             },800,'easeInOutQuart');
         $('.dc2_bigcube_face1 .dc2_header').delay(500).stop(false, false).animate({
-            'margin-left': -100
+            'margin-left': -390
         }, 800, 'easeInOutQuart');
     });
 
 
-    $('#dc2 .dc2_bigcube_face1 .btn_close').spriteOnHover({
-        fps: 24,
-        orientation: 'vertical',
-        width: 100,
-        height: 100
-    });
+    // $('#dc2 .dc2_bigcube_face1 .btn_close').spriteOnHover({
+    //     fps: 24,
+    //     orientation: 'vertical',
+    //     width: 100,
+    //     height: 100
+    // });
 
     $('#dc2 .dc2_bigcube_face1 .btn_close').unbind('click');
     $('#dc2 .dc2_bigcube_face1 .btn_close').bind('click', function () {
@@ -1123,28 +1125,31 @@ function bindNodeEvent() {
 
     $('#dc1 .nav_arrow_right').css({
         'background-position': '0'
-    }).spriteOnHover({
-        fps: 20,
-        orientation: 'vertical',
-        width: 98,
-        height: 98
     });
+    // .spriteOnHover({
+    //     fps: 20,
+    //     orientation: 'vertical',
+    //     width: 98,
+    //     height: 98
+    // });
     $('#dc1 .nav_arrow_left').css({
         'background-position': '0'
-    }).spriteOnHover({
-        fps: 20,
-        orientation: 'vertical',
-        width: 98,
-        height: 98
     });
+    // .spriteOnHover({
+    //     fps: 20,
+    //     orientation: 'vertical',
+    //     width: 98,
+    //     height: 98
+    // });
     $('#dc1 .back').css({
         'background-position': '0 0'
-    }).spriteOnHover({
-        fps: 20,
-        orientation: 'vertical',
-        width: 199,
-        height: 98
     });
+    // .spriteOnHover({
+    //     fps: 20,
+    //     orientation: 'vertical',
+    //     width: 199,
+    //     height: 98
+    // });
 
     // Submit comments
     $(".dc2_bigcube_face1 .comment_form").validate({
@@ -1197,8 +1202,8 @@ function bindNodeEvent() {
                 var media_date_year = date_media_date.getFullYear();
                 var media_date_month = date_media_date.getMonth();
                 var media_date_day = date_media_date.getDate();
-                var name = data[c].field_email.split('@');
-                comments_wrap.append('<div class="comment_item"><div class="comment_title"><span class="name">' + name[0] + '</span><span class="date">' + media_date_day + " " + monthShortName[media_date_month] + ", " + media_date_year + '</span></div><div class="comment_body">' + data[c].field_comment + '</div></div>');
+                var name = data[c].name;
+                comments_wrap.append('<div class="comment_item"><div class="comment_title"><span class="name">' + name + '</span><span class="date">' + media_date_day + " " + monthShortName[media_date_month] + ", " + media_date_year + '</span></div><div class="comment_body">' + data[c].field_comment + '</div></div>');
             }
             if(data.length>0)
             {
@@ -1554,28 +1559,31 @@ function resizeWindow() {
         var back_height = $('#dc1 .back').height();
         $('#dc1 .nav_arrow_right').css({
             'background-position': '0'
-        }).spriteOnHover({
-            fps: 20,
-            orientation: 'vertical',
-            width: arrow_width,
-            height: arrow_width
         });
+        // .spriteOnHover({
+        //     fps: 20,
+        //     orientation: 'vertical',
+        //     width: arrow_width,
+        //     height: arrow_width
+        // });
         $('#dc1 .nav_arrow_left').css({
             'background-position': '0'
-        }).spriteOnHover({
-            fps: 20,
-            orientation: 'vertical',
-            width: arrow_width,
-            height: arrow_width
         });
+        // .spriteOnHover({
+        //     fps: 20,
+        //     orientation: 'vertical',
+        //     width: arrow_width,
+        //     height: arrow_width
+        // });
         $('#dc1 .back').css({
             'background-position': '0 0'
-        }).spriteOnHover({
-            fps: 20,
-            orientation: 'vertical',
-            width: back_width,
-            height: back_height
         });
+        // .spriteOnHover({
+        //     fps: 20,
+        //     orientation: 'vertical',
+        //     width: back_width,
+        //     height: back_height
+        // });
     },1000);
      
     
