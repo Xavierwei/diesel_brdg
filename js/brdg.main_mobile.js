@@ -1272,6 +1272,8 @@ function loadcomment(_item) {
                             $(this).after('<span>Your comment is now posted</span>');
                         });
                         submiting = true;
+                        $(form).find('textarea[name="comment"]').val('');
+                        $(form).find('input[name="email"]').val('');
                     }
                 }, function (e) {
                     $(form).find('.loading').fadeOut(200);
