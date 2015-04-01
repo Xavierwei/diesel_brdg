@@ -571,7 +571,7 @@ function bindDcEventOnce() {
 
 
 
-    $('.comments_list_wrap').on("swiperight",function(e){
+    $('.comments_list_wrap').on("swipeleft",function(e){
         var left = $('.comments_list').offset().left;
         if ($(e.target).parent().parent().nextAll('.comment_item_wrap').length > 0)
         {
@@ -581,7 +581,7 @@ function bindDcEventOnce() {
         }
     });
 
-    $('.comments_list_wrap').on("swipeleft",function(e){
+    $('.comments_list_wrap').on("swiperight",function(e){
         var left = $('.comments_list').offset().left;
         if (left < 0) {
             $('.comments_list').animate({

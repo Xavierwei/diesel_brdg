@@ -996,7 +996,7 @@ function bindNodeEvent() {
 
             var left_panel_width = $('.left_panel').width();
             $('.left_panel').animate({'left': 0},800,'easeInOutQuart');
-            $('.vgrid').animate({'margin-left':left_panel_width},800,'easeInOutQuart',function(){
+            $('.vgrid').animate({'margin-left':left_panel_width + 1},800,'easeInOutQuart',function(){
                 setTimeout(bindVgridEvent,500);
             });
             $('#dc3 iframe').remove();
@@ -1531,7 +1531,7 @@ function resizeWindow() {
                 'left': $width
             });
             $('.vgrid').css({
-                'margin-left': $width + 100
+                'margin-left': $width + 101
             });
             $('#dc3').css({
                  'width': dc3_width,
