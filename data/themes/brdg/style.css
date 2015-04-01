@@ -1048,7 +1048,7 @@ html.js fieldset.collapsible .fieldset-legend {background-position:0 55%;}
 
 .view-admin-comment {padding:20px 0 0;}
 .view-admin-comment .views-row {float:left;width:480px;height:80px;font-size:11px;margin:15px;background:#fff;color:#444; position:relative;}
-.comment_item {background:#f7f7f7;height:80px;}
+.comment_item {background:#f7f7f7;height:80px;padding-left:10px;}
 .comment_item.Yes {background:#fff;}
 .comment_item .img {float:left;margin:0 10px 0 0;}
 .comment_item .created {padding:4px 0 0;color:#888;}

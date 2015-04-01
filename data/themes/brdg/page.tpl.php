@@ -20,6 +20,7 @@ endif;
             <ul>
                 <li><a href="<?php print base_path();?>/admin/content/sourcemanage/image">Pictures</a></li>
                 <li><a href="<?php print base_path();?>/admin/people/user-list">People</a></li>
+                <li><a href="<?php print base_path();?>/admin/comments/list">Comment</a></li>
             </ul>
         </li>
 
